@@ -1,0 +1,16 @@
+
+.main__bg {
+  /* background: var(--main-background); */
+  background: var(--main-background);
+}
+
+.section {
+  min-height: 100vh;
+}
+
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: var(--primary-color);
+  color: var(--white-color);
+}

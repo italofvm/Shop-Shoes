@@ -1,0 +1,91 @@
+/* Reset CSS Avançado */
+
+/* Box-sizing reset - Melhora o modelo de caixa padrão */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Margin e Padding reset - Garante consistência nos espaçamentos */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, figure, blockquote, dl, dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* List reset - Remove os estilos de lista padrão */
+ul, ol {
+  list-style: none;
+}
+
+/* Typography reset - Normaliza fontes e espaçamentos de texto */
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+/* Links reset - Remove decoração de link padrão */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Formulários reset - Remove estilos padrão de elementos de formulário */
+input, button, textarea, select {
+  font: inherit;
+  margin: 0;
+}
+
+/* Imagem reset - Evita bordas indesejadas em imagens */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Botão reset - Remove estilos de botão padrão */
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Tabela reset - Melhora a formatação de tabelas */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 0.5px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Seção de cabeçalho reset - Define estilos padrão para cabeçalhos */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+/* Estilos adicionais específicos do seu projeto podem ser adicionados abaixo deste ponto */
+
