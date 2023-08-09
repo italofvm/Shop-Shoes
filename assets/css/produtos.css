@@ -24,7 +24,7 @@
 }
 
 .produto__titulo a:hover {
-  padding: .3rem;
+  padding: 0.3rem;
   background: var(--primary-color);
   color: var(--white-color);
 }
@@ -91,6 +91,14 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--gap);
+  }
+
+  .produto__titulo h2 {
+    padding: 0 1rem;
+  }
+
+  .produto__titulo a {
+    padding: 0 1rem;
   }
 }
 

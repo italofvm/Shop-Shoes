@@ -10,7 +10,9 @@
 
 .footer {
   text-align: center;
-  padding: 1.5rem;
+  padding: 1rem;
+  margin-top: 2rem;
   background: var(--primary-color);
   color: var(--white-color);
+  font-size: 1rem;
 }

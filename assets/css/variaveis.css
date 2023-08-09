@@ -20,3 +20,9 @@
   margin: 0 auto;
   padding: 1rem 0;
 }
+
+@media (max-width: 900px) {
+  .main__content {
+    padding: 1rem;
+  }
+}
