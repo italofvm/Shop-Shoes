@@ -2,7 +2,7 @@
   align-items: center;
   flex-direction: column;
   display: flex;
-  height: 100vh;
+  height: 76vh;
   justify-content: center;
 }
 
@@ -14,7 +14,7 @@
   text-align: center;
 }
 
-.recovery__subtitulo{
+.recovery__subtitulo {
   font-size: 1.1rem;
   padding-top: 1rem;
   text-align: center;
@@ -35,7 +35,7 @@
 
 .login__form .box__user input,
 .cadastro__form .box__user input,
-.recovery__form .box__user input{
+.recovery__form .box__user input {
   background: transparent;
   border: none;
   border-bottom: 2px solid var(--primary-color);
@@ -64,6 +64,24 @@
   top: -20px;
 }
 
+.box__file input[type="file"] {
+  display: none;
+}
+
+.box__file label {
+  align-items: center;
+  background: var(--primary-color);
+  border-radius: 0.2rem;
+  cursor: pointer;
+  color: var(--white-color);
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+  margin-top: .1rem;
+  padding: .5rem;
+  width: 50%;
+}
+
 .login__form .btn__login,
 .cadastro__form .btn__cadastro,
 .recovery__form .btn__recovery {
@@ -79,7 +97,8 @@
 
 .login__form .btn__login:hover,
 .cadastro__form .btn__cadastro:hover,
-.recovery__form .btn__recovery:hover {
+.recovery__form .btn__recovery:hover,
+.box__file label:hover {
   background-color: var(--blue-lavender-color);
   border-bottom: 2px solid var(--primary-color);
   color: var(--white-color);
@@ -104,6 +123,9 @@
   color: var(--primary-color);
 }
 
+.footer {
+  bottom: 0;
+}
 /*Resposividade*/
 
 @media (max-width: 950px) {
@@ -111,9 +133,9 @@
     flex-direction: column;
   }
 
-.login__form,
-.cadastro__form,
-.recovery__form {
+  .login__form,
+  .cadastro__form,
+  .recovery__form {
     width: 85%;
   }
 
