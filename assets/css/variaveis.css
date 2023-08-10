@@ -2,15 +2,13 @@
 
 :root {
   /*--Cores--*/
-  --primary-color: #7000e0;
-  --main-background: ##f5f5f5;
-  --white-color: #fff;
   --blue-lavender-color: #0077c0;
   --black-color: #000;
-  --text-description: #414040;
+  --main-background: #f5f5f5;
+  --primary-color: #7000e0;
   --segundary-color: #f5f5dc;
-  --button: #ff0000;
-  --footer: #000;
+  --text-description: #414040;
+  --white-color: #fff;
   /*--Predefinição--*/
   --gap: 3rem;
 }

@@ -1,0 +1,118 @@
+.formulario__content {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  height: 78vh;
+  justify-content: center;
+}
+
+.formulario__content h2 {
+  border-bottom: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.login__form,
+.cadastro__form {
+  padding: 2.5rem;
+  width: 50%;
+}
+
+.login__form .box__user,
+.cadastro__form .box__user {
+  position: relative;
+}
+
+.login__form .box__user input,
+.cadastro__form .box__user input {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--primary-color);
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  outline: none;
+  padding: 0.625rem 0;
+  width: 100%;
+}
+
+.box__user label {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  left: 0;
+  position: absolute;
+  padding: 0.625rem 0;
+  pointer-events: none;
+  top: 0;
+  transition: 0.5s;
+}
+
+.box__user input:focus ~ label,
+.box__user input:valid ~ label {
+  font-size: 1rem;
+  left: 0;
+  top: -20px;
+}
+
+.login__form .btn__login,
+.cadastro__form .btn__cadastro {
+  border-bottom: 2px solid var(--black-color);
+  background-color: var(--primary-color);
+  border-radius: 0.2rem;
+  color: var(--white-color);
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: all 0.3s ease-in-out;
+  width: 50%;
+}
+
+.login__form .btn__login:hover,
+.cadastro__form .btn__cadastro:hover {
+  background-color: var(--blue-lavender-color);
+  border-bottom: 2px solid var(--primary-color);
+  color: var(--white-color);
+}
+
+.fomulario__link {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fomulario__link a {
+  padding: 1rem 0;
+  font-size: 1rem;
+}
+
+.fomulario__link p {
+  font-size: 1rem;
+}
+
+.fomulario__link a:hover {
+  color: var(--primary-color);
+}
+
+/*Resposividade*/
+
+@media (max-width: 950px) {
+  .fomulario__link {
+    flex-direction: column;
+  }
+
+.login__form,
+.cadastro__form  {
+    width: 85%;
+  }
+
+  .formulario__content .btn__login,
+  .formulario__content .btn__cadastro {
+    margin-top: 1rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .formulario__content {
+    width: 100%;
+  }
+}

@@ -16,7 +16,6 @@
 </head>
 
 <body>
-
   <!-- Section NavBar -->
   <header class="menu menu__bg">
     <section class="menu__content main__content">
@@ -38,32 +37,38 @@
     </section>
   </header>
 
-  <main class="main__bg">
+  <main class=".main__bg">
     <div class="main__content">
       <div class="menu__search">
         <input type="text" placeholder=" Pesquisa...">
       </div>
     </div>
 
-    <!-- Section Login -->
-    <section class="main__content formulario__content">
-      <h2>Login</h2>
-      <form class="login__form">
-        <div class="box__user">
-          <input type="email" name="email" id="email" required>
-          <label for="email">Email</label>
-        </div>
+    <!-- Section Register -->
+    <section class="cadastro">
+      <div class="main__content formulario__content">
+        <h2>Cadastro</h2>
+        <form class="cadastro__form">
 
-        <div class="box__user">
-          <input type="password" name="password" id="password" required>
-          <label for="password">Senha</label>
-        </div>
-        <div class="fomulario__link">
-          <a href="#">Esqueceu a senha?</a>
-          <p>É novo por aqui? <a href="../pages/cadastro.html">Cadastrar</a></p>
-        </div>
-        <button class="btn__login">Login</button>
-      </form>
+          <div class="box__user">
+            <input type="text" name="name" id="name" required>
+            <label for="name">Nome</label>
+          </div>
+          <div class="box__user">
+            <input type="email" name="email" id="email" required>
+            <label for="email">Email</label>
+          </div>
+          <div class="box__user">
+            <input type="password" name="password" id="password" required>
+            <label for="password">Senha</label>
+          </div>
+          <div class="box__user">
+            <input type="password" name="confirPassword" id="confirPassword" required>
+            <label for="confirPassword">Confirme a senha</label>
+          </div>
+          <button type="submit" class="btn__cadastro">Cadastrar</button>
+        </form>
+      </div>
     </section>
   </main>
 
@@ -72,7 +77,6 @@
     <div class="main__content">
       <p>&copy; 2023 Shop Shoes. Todos os direitos reservados.</p>
     </div>
-
   </footer>
 </body>
 

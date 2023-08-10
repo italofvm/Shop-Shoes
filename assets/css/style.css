@@ -1,6 +1,5 @@
 
 .main__bg {
-  /* background: var(--main-background); */
   background: var(--main-background);
 }
 
@@ -9,10 +8,27 @@
 }
 
 .footer {
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
   background: var(--primary-color);
   color: var(--white-color);
   font-size: 1rem;
+  height: 5rem;
+  margin-top: 2rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.back__to__top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: var(--white-color);
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: var(--primary-color);
+  transform: rotate(-90deg);
+  border: 0.2rem solid var(--primary-color);
 }

@@ -1,11 +1,12 @@
 .menu__bg {
   background: var(--primary-color);
+  height: 5rem;
 }
 
 .menu__content {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .menu__content ul {
@@ -16,26 +17,26 @@
 
 .menu__content ul li a {
   display: block;
-  padding: 0.5rem;
-  font-size: 1.3rem;
   color: var(--white-color);
+  font-size: 1.3rem;
+  padding: 0.5rem;
   position: relative;
 }
 
 .menu__content ul li a::after {
-  content: "";
-  position: absolute;
   bottom: 0.5rem;
-  left: 50%;
-  width: 0;
-  height: 0.2rem;
   background: var(--segundary-color);
+  content: "";
+  height: 0.2rem;
+  left: 50%;
+  position: absolute;
   transition: all 300ms ease-in-out;
+  width: 0;
 }
 
 .menu__content ul li a:hover:after {
-  width: 80%;
   left: 10%;
+  width: 80%;
 }
 
 .menu__pesquisa {
@@ -44,34 +45,36 @@
 }
 
 .menu__pesquisa input,
-.menu__pesquisa2 input {
-  padding: 0.625rem 0.625rem 0.625rem 2.18rem;
+.menu__search input {
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 1rem;
-  width: 100%;
   outline-color: var(--main-background);
+  padding: 0.625rem 0.625rem 0.625rem 2.18rem;
+  width: 100%;
 }
 
 .menu__pesquisa input:focus,
-.menu__pesquisa2 input:focus {
+.menu__search input:focus {
   box-shadow: inset 3px 0px 5px rgba(0, 0, 0, 0.15);
 }
 
 .menu__pesquisa button,
-.menu__pesquisa2 button {
-  position: absolute;
-  top: 0;
-  right: 12.5rem;
+.menu__search button {
   border: none;
   background-color: transparent;
-  padding: 10px;
   cursor: pointer;
+  right: 12.5rem;
+  top: 0;
+  position: absolute;
+  padding: 10px;
 }
 
-.menu__pesquisa2 {
+.menu__search {
   display: none;
 }
+
+/*Resposividade*/
 
 @media (max-width: 890px) {
   .menu__content ul li a {
@@ -84,16 +87,19 @@
     display: none;
   }
 
-  .menu__pesquisa2 {
-    position: relative;
+  .menu__search {
     display: inline-block;
+    position: relative;
     text-align: center;
     width: 100%;
+    
   }
 
-  .menu__pesquisa2 input {
-  padding: 0.625rem 0.625rem 0.625rem 1.18rem;
-}
+  .menu__search input {
+    border:2px solid var(--primary-color);
+    outline: none;
+    padding: 0.625rem 0.625rem 0.625rem 1.18rem;
+  }
 }
 
 @media (max-width: 420px) {
@@ -106,5 +112,4 @@
   .menu__content ul li a {
     font-size: 0.9rem;
   }
-
 }

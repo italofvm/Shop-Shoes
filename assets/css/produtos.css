@@ -5,29 +5,29 @@
 }
 
 .produto__titulo {
-  display: flex;
   align-items: center;
+  border-bottom: 2px solid var(--primary-color);
+  display: flex;
   justify-content: space-between;
   padding: 2rem 0 0 0;
-  border-bottom: 2px solid var(--primary-color);
 }
 
 .produto__titulo h2 {
-  text-transform: uppercase;
-  font-size: 1.8rem;
   color: var(--text-description);
+  font-size: 1.8rem;
+  text-transform: uppercase;
 }
 
 .produto__titulo a {
-  text-transform: uppercase;
-  font-weight: bold;
   display: inline-block;
-  color: var(--primary-color);
   border: none;
   border-radius: .2rem;
-  text-align: center;
-  font-size: 1.2rem;
+  color: var(--primary-color);
   cursor: pointer;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: center;
   transition: all 0.3s ease-in-out;
 }
 
@@ -36,11 +36,11 @@
 }
 
 .produtos {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   background: #c0c0c0;
   border-radius: 2%;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
 }
 
@@ -51,27 +51,27 @@
 }
 
 .produtos p {
+  color: var(--text-description);
   font-size: 1.2rem;
   font-weight: 400;
-  color: var(--text-description);
   padding-bottom: 0.3rem;
 }
 
 .produtos span {
+  color: var(--primary-color);
   font-style: italic;
   font-weight: bold;
-  color: var(--primary-color);
 }
 
 .produtos button {
-  font-size: 16px;
-  color: var(--white-color);
-  margin: 1rem 0;
-  background-color: var(--text-description);
   border: 1px solid var(--white-color);
+  background-color: var(--text-description);
   border-radius: 5px;
-  padding: 10px 20px;
+  color: var(--white-color);
   cursor: pointer;
+  font-size: 16px;
+  margin: 1rem 0;
+  padding: 10px 20px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -81,15 +81,15 @@
 }
 
 .produtos img {
-  width: 100%;
-  height: 100%;
   border-radius: 2% 2% 0 0;
+  height: 100%;
   transition: all 300ms ease-in-out;
+  width: 100%;
 }
 
 .produtos img:hover {
-  transform: scale(1.1);
   cursor: pointer;
+  transform: scale(1.1);
 }
 
 @media (max-width: 900px) {
