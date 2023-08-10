@@ -2,7 +2,7 @@
   align-items: center;
   flex-direction: column;
   display: flex;
-  height: 78vh;
+  height: 100vh;
   justify-content: center;
 }
 
@@ -11,21 +11,31 @@
   color: var(--primary-color);
   font-size: 1.5rem;
   text-transform: uppercase;
+  text-align: center;
+}
+
+.recovery__subtitulo{
+  font-size: 1.1rem;
+  padding-top: 1rem;
+  text-align: center;
 }
 
 .login__form,
-.cadastro__form {
+.cadastro__form,
+.recovery__form {
   padding: 2.5rem;
   width: 50%;
 }
 
 .login__form .box__user,
-.cadastro__form .box__user {
+.cadastro__form .box__user,
+.recovery__form .box__user {
   position: relative;
 }
 
 .login__form .box__user input,
-.cadastro__form .box__user input {
+.cadastro__form .box__user input,
+.recovery__form .box__user input{
   background: transparent;
   border: none;
   border-bottom: 2px solid var(--primary-color);
@@ -55,7 +65,8 @@
 }
 
 .login__form .btn__login,
-.cadastro__form .btn__cadastro {
+.cadastro__form .btn__cadastro,
+.recovery__form .btn__recovery {
   border-bottom: 2px solid var(--black-color);
   background-color: var(--primary-color);
   border-radius: 0.2rem;
@@ -67,7 +78,8 @@
 }
 
 .login__form .btn__login:hover,
-.cadastro__form .btn__cadastro:hover {
+.cadastro__form .btn__cadastro:hover,
+.recovery__form .btn__recovery:hover {
   background-color: var(--blue-lavender-color);
   border-bottom: 2px solid var(--primary-color);
   color: var(--white-color);
@@ -100,7 +112,8 @@
   }
 
 .login__form,
-.cadastro__form  {
+.cadastro__form,
+.recovery__form {
     width: 85%;
   }
 

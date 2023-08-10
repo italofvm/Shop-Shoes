@@ -3,6 +3,7 @@
 /* Box-sizing reset - Melhora o modelo de caixa padrão */
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *, *:before, *:after {
