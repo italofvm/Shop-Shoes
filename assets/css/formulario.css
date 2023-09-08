@@ -57,29 +57,15 @@
   transition: 0.5s;
 }
 
+.box__file {
+  margin: 1rem 0;
+}
+
 .box__user input:focus ~ label,
 .box__user input:valid ~ label {
   font-size: 1rem;
   left: 0;
   top: -20px;
-}
-
-.box__file input[type="file"] {
-  display: none;
-}
-
-.box__file label {
-  align-items: center;
-  background: var(--primary-color);
-  border-radius: 0.2rem;
-  cursor: pointer;
-  color: var(--white-color);
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 1rem;
-  margin-top: .1rem;
-  padding: .5rem;
-  width: 50%;
 }
 
 .login__form .btn__login,
@@ -97,8 +83,7 @@
 
 .login__form .btn__login:hover,
 .cadastro__form .btn__cadastro:hover,
-.recovery__form .btn__recovery:hover,
-.box__file label:hover {
+.recovery__form .btn__recovery:hover {
   background-color: var(--blue-lavender-color);
   border-bottom: 2px solid var(--primary-color);
   color: var(--white-color);
@@ -122,6 +107,47 @@
 .fomulario__link a:hover {
   color: var(--primary-color);
 }
+
+#picture__input {
+  display: none;
+}
+
+/* .picture {
+  width: 400px;
+  aspect-ratio: 16/9;
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  border: 2px dashed currentcolor;
+  cursor: pointer;
+  font-family: sans-serif;
+  transition: color 300ms ease-in-out, background 300ms ease-in-out;
+  outline: none;
+  overflow: hidden;
+}
+
+.picture:hover {
+  color: #777;
+  background: #ccc;
+}
+
+.picture:active {
+  border-color: turquoise;
+  color: turquoise;
+  background: #eee;
+}
+
+.picture:focus {
+  color: #777;
+  background: #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.picture__img {
+  max-width: 100%;
+} */
 
 .footer {
   bottom: 0;
